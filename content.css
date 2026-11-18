@@ -16,7 +16,7 @@
   ytm-playlist-video-renderer, ytm-backstage-post-renderer, ytm-post-renderer,
   top-landscape-image-layout-view-model, compact-landscape-no-button-layout-view-model,
   mini-game-card-view-model
-):not([data-yfvb-revealed]) :is(
+):not([data-yfvb-revealed]):not(:is(ytd-search, ytm-search) *) :is(
   ytd-thumbnail, ytd-playlist-thumbnail, yt-thumbnail-view-model, yt-collection-thumbnail-view-model,
   ytm-thumbnail-cover, ytm-playlist-thumbnail, #video-preview-portal, ytm-video-preview,
   ytd-backstage-image-renderer, ytd-post-multi-image-renderer,
@@ -29,6 +29,35 @@
   .yfvb-media
 ) {
   display: none !important;
+}
+
+/* Search results keep the picture's box, blank, so titles stay where they
+   are (the user's call). Search thumbnails have no border, just rounded
+   corners, so nothing of them shows. The hover preview is
+   hidden the same way (content.js pauses it). */
+:is(ytd-search, ytm-search) :is(
+  yt-lockup-view-model, ytm-shorts-lockup-view-model,
+  ytd-video-renderer, ytd-rich-grid-media, ytd-compact-video-renderer, ytd-grid-video-renderer,
+  ytd-playlist-renderer, ytd-compact-playlist-renderer, ytd-radio-renderer, ytd-compact-radio-renderer,
+  ytd-playlist-video-renderer, ytd-playlist-panel-video-renderer, ytd-reel-item-renderer,
+  ytd-backstage-post-renderer, ytd-post-renderer,
+  ytm-video-with-context-renderer, ytm-compact-video-renderer, ytm-compact-playlist-renderer,
+  ytm-playlist-video-renderer, ytm-backstage-post-renderer, ytm-post-renderer,
+  top-landscape-image-layout-view-model, compact-landscape-no-button-layout-view-model,
+  mini-game-card-view-model
+):not([data-yfvb-revealed]) :is(
+  ytd-thumbnail, ytd-playlist-thumbnail, yt-thumbnail-view-model, yt-collection-thumbnail-view-model,
+  ytm-thumbnail-cover, ytm-playlist-thumbnail, #video-preview-portal, ytm-video-preview,
+  ytd-backstage-image-renderer, ytd-post-multi-image-renderer,
+  ytm-backstage-image-renderer, ytm-post-multi-image-renderer,
+  ytd-backstage-poll-renderer img, ytm-backstage-poll-renderer img,
+  top-landscape-image-layout-view-model > :has(ad-image-view-model),
+  compact-landscape-no-button-layout-view-model > :has(ad-image-view-model),
+  mini-game-card-view-model > div > :has(> a img),
+  a:has(yt-thumbnail-view-model) > yt-badge-view-model,
+  .yfvb-media
+) {
+  visibility: hidden !important;
 }
 
 /* End-of-video cards in the player (PLAYER_CARD_SELECTOR in content.js, also
