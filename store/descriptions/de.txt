@@ -1,0 +1,10 @@
+YouTube-Videos nach Titel und anderem Text durchstöbern. Thumbnails bei Bedarf anzeigen.
+
+Alle Thumbnails werden ausgeblendet – für einen ruhigeren, ablenkungsfreien Feed, mit einem Anzeigen-Button an jedem Video, wenn du es sehen willst.
+
+• Blendet aus auf der Startseite, in Abos, in der Suche, auf Kanalseiten, in Playlists und in Empfehlungen
+• Zeigt das Thumbnail mit dem Anzeigen-Button (beim Video, meist neben dem ⋮-Menü); ein weiterer Klick blendet es wieder aus
+
+YouTube-Thumbnails blockieren, YouTube-Thumbnails deaktivieren und per Klick anzeigen. Für ablenkungsfreies Surfen, weniger Aufschieben beim Lernen oder Arbeiten und um Ablenkungen oder unpassende Bilder zu entfernen, wenn andere YouTube auf deinem Gerät sehen. Hilft auch, Spoiler zu vermeiden.
+
+Quellcode unter https://github.com/jxelia/hide-thumbnails-for-youtube

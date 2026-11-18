@@ -1,0 +1,17 @@
+{
+  "extName": {
+    "message": "YouTube のサムネイルを非表示"
+  },
+  "extDescription": {
+    "message": "サムネイルを非表示にします。表示ボタン付き。"
+  },
+  "showHiddenMedia": {
+    "message": "非表示のメディアを表示"
+  },
+  "showMedia": {
+    "message": "メディアを表示"
+  },
+  "hideMedia": {
+    "message": "メディアを非表示"
+  }
+}

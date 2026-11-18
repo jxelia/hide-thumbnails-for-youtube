@@ -1,0 +1,22 @@
+{
+  "extName": {
+    "message": "Hide Thumbnails for YouTube",
+    "description": "Extension name. Keep \"YouTube\" as is. Max 75 characters."
+  },
+  "extDescription": {
+    "message": "Hide thumbnails. Unhide button included.",
+    "description": "Short store summary. Max 132 characters."
+  },
+  "showHiddenMedia": {
+    "message": "Show hidden media",
+    "description": "Screen-reader label of the reveal button while the thumbnail is hidden."
+  },
+  "showMedia": {
+    "message": "Show media",
+    "description": "Tooltip of the reveal button while the thumbnail is hidden."
+  },
+  "hideMedia": {
+    "message": "Hide media",
+    "description": "Label and tooltip of the reveal button while the thumbnail shows."
+  }
+}

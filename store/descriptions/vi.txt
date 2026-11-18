@@ -1,0 +1,10 @@
+Duyệt video YouTube bằng tiêu đề và các văn bản khác. Hiện hình thu nhỏ nếu muốn.
+
+Mọi hình thu nhỏ đều được ẩn để bảng tin yên tĩnh, không gây xao nhãng, với nút hiện trên mỗi video khi bạn muốn xem.
+
+• Ẩn ở Trang chủ, Kênh đăng ký, tìm kiếm, trang kênh, danh sách phát và các đề xuất
+• Hiện hình thu nhỏ bằng nút hiện (nằm cùng video, thường cạnh trình đơn ⋮); nhấp lần nữa để ẩn
+
+Chặn hình thu nhỏ YouTube, tắt hình thu nhỏ YouTube và nhấp để hiện. Dùng để duyệt web không xao nhãng, giảm trì hoãn khi học hoặc làm việc, và loại bỏ những thứ gây xao nhãng hoặc hình ảnh không phù hợp khi người khác xem YouTube trên thiết bị của bạn. Cũng giúp tránh bị tiết lộ nội dung.
+
+Mã nguồn tại https://github.com/jxelia/hide-thumbnails-for-youtube

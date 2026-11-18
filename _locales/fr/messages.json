@@ -1,0 +1,17 @@
+{
+  "extName": {
+    "message": "Masquer les miniatures pour YouTube"
+  },
+  "extDescription": {
+    "message": "Masque les miniatures. Bouton pour les afficher inclus."
+  },
+  "showHiddenMedia": {
+    "message": "Afficher le contenu masqué"
+  },
+  "showMedia": {
+    "message": "Afficher le contenu"
+  },
+  "hideMedia": {
+    "message": "Masquer le contenu"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "extName": {
+    "message": "隱藏 YouTube 縮圖"
+  },
+  "extDescription": {
+    "message": "隱藏縮圖，附有顯示按鈕。"
+  },
+  "showHiddenMedia": {
+    "message": "顯示隱藏的媒體"
+  },
+  "showMedia": {
+    "message": "顯示媒體"
+  },
+  "hideMedia": {
+    "message": "隱藏媒體"
+  }
+}

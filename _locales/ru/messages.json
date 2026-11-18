@@ -1,0 +1,17 @@
+{
+  "extName": {
+    "message": "Скрыть превью для YouTube"
+  },
+  "extDescription": {
+    "message": "Скрывает превью. Есть кнопка, чтобы их показать."
+  },
+  "showHiddenMedia": {
+    "message": "Показать скрытое"
+  },
+  "showMedia": {
+    "message": "Показать"
+  },
+  "hideMedia": {
+    "message": "Скрыть"
+  }
+}

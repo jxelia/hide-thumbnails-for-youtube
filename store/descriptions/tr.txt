@@ -1,0 +1,10 @@
+YouTube videolarına başlık ve diğer metinlerle göz atın. İsterseniz küçük resmi gösterin.
+
+Tüm küçük resimler gizlenir; akışınız daha sakin ve dikkat dağıtmayan bir hale gelir. Görmek istediğinizde her videoda bir gösterme düğmesi vardır.
+
+• Ana sayfa, Abonelikler, arama, kanal sayfaları, oynatma listeleri ve önerilerde gizler
+• Küçük resmi gösterme düğmesiyle gösterin (videonun yanında, genellikle ⋮ menüsünün yanında); gizlemek için tekrar tıklayın
+
+YouTube küçük resimlerini engelleyin, YouTube küçük resimlerini kapatın ve göstermek için tıklayın. Dikkat dağıtmadan gezinmek, ders çalışırken veya çalışırken erteleme alışkanlığını azaltmak ve cihazınızda YouTube izleyen başkaları için dikkat dağıtan ya da uygunsuz görselleri kaldırmak için kullanılır. Spoiler'lardan kaçınmanıza da yardımcı olur.
+
+Kaynak kodu: https://github.com/jxelia/hide-thumbnails-for-youtube

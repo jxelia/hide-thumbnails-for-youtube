@@ -1,0 +1,10 @@
+Navega por los videos de YouTube usando el título y otros textos. Si quieres, muestra la miniatura.
+
+Todas las miniaturas se ocultan para un feed más tranquilo y sin distracciones, con un botón para mostrar en cada video cuando quieras verla.
+
+• Oculta en Inicio, Suscripciones, la búsqueda, las páginas de canales, las listas de reproducción y las recomendaciones
+• Muestra la miniatura con el botón para mostrar (colocado junto al video, normalmente al lado del menú ⋮); vuelve a hacer clic para ocultarla
+
+Bloquea las miniaturas de YouTube, desactiva las miniaturas de YouTube y haz clic para mostrarlas. Sirve para navegar sin distracciones, para procrastinar menos al estudiar o trabajar y para quitar distracciones o imágenes inapropiadas cuando otras personas ven YouTube en tu dispositivo. También te ayuda a evitar spoilers.
+
+Código fuente en https://github.com/jxelia/hide-thumbnails-for-youtube

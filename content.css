@@ -1,0 +1,308 @@
+/* Media is hidden by CSS alone, so it never flashes on screen before content.js
+   runs. Revealing an item just sets data-yfvb-revealed on it.
+
+   Each feed item (grid card, search result, sidebar entry, Short, post, ad) is one of
+   these elements, on www.youtube.com and m.youtube.com. Thumbnails, the inline
+   preview player that m.youtube.com moves into the item, and post images are
+   hidden inside it. .yfvb-media is the thumbnail's wrapper (link, frame), which
+   content.js marks so its box collapses too. */
+:is(
+  yt-lockup-view-model, ytm-shorts-lockup-view-model,
+  ytd-video-renderer, ytd-rich-grid-media, ytd-compact-video-renderer, ytd-grid-video-renderer,
+  ytd-playlist-renderer, ytd-compact-playlist-renderer, ytd-radio-renderer, ytd-compact-radio-renderer,
+  ytd-playlist-video-renderer, ytd-playlist-panel-video-renderer, ytd-reel-item-renderer,
+  ytd-backstage-post-renderer, ytd-post-renderer,
+  ytm-video-with-context-renderer, ytm-compact-video-renderer, ytm-compact-playlist-renderer,
+  ytm-playlist-video-renderer, ytm-backstage-post-renderer, ytm-post-renderer,
+  top-landscape-image-layout-view-model, compact-landscape-no-button-layout-view-model,
+  mini-game-card-view-model
+):not([data-yfvb-revealed]) :is(
+  ytd-thumbnail, ytd-playlist-thumbnail, yt-thumbnail-view-model, yt-collection-thumbnail-view-model,
+  ytm-thumbnail-cover, ytm-playlist-thumbnail, #video-preview-portal, ytm-video-preview,
+  ytd-backstage-image-renderer, ytd-post-multi-image-renderer,
+  ytm-backstage-image-renderer, ytm-post-multi-image-renderer,
+  ytd-backstage-poll-renderer img, ytm-backstage-poll-renderer img,
+  top-landscape-image-layout-view-model > :has(ad-image-view-model),
+  compact-landscape-no-button-layout-view-model > :has(ad-image-view-model),
+  mini-game-card-view-model > div > :has(> a img),
+  a:has(yt-thumbnail-view-model) > yt-badge-view-model,
+  .yfvb-media
+) {
+  display: none !important;
+}
+
+/* End-of-video cards in the player (PLAYER_CARD_SELECTOR in content.js, also
+   in its ITEM_SELECTOR). Thumbnails there are CSS backgrounds. The modern grid
+   is a column of picture box then text, so the box goes and the tile is text
+   only. End-screen cards and the older grid are placed by the player over the
+   video, so they keep their size and lose just the picture, leaving no box. */
+.ytp-modern-videowall-still:not([data-yfvb-revealed]) .ytp-modern-videowall-still-image {
+  display: none !important;
+}
+
+:is(.ytp-ce-video, .ytp-ce-playlist):not([data-yfvb-revealed]) :is(.ytp-ce-element-shadow, .ytp-ce-covering-shadow-top) {
+  display: none !important;
+}
+
+:is(.ytp-ce-video, .ytp-ce-playlist):not([data-yfvb-revealed]) .ytp-ce-covering-image,
+.ytp-videowall-still:not([data-yfvb-revealed]) .ytp-videowall-still-image {
+  background-image: none !important;
+  background-color: transparent !important;
+}
+
+/* The older grid shows its title only on hover; keep it shown while hidden. */
+.ytp-videowall-still:not([data-yfvb-revealed]) .ytp-videowall-still-info-content {
+  opacity: 1 !important;
+}
+
+/* No ⋮ on these. Where there are no channel and views lines (end-screen
+   cards, the older grid) the reveal button sits at the right end of the
+   title's first line, and the title makes room for it. Always on the
+   player's black, in the grey of the channel and views lines. */
+/* Cards can carry a hidden duplicate title next to the shown one, so pad
+   every title beside the button, before or after it. */
+:is(.ytp-modern-videowall-still-info-title, .ytp-videowall-still-info-title, .ytp-ce-video-title, .ytp-ce-playlist-title):is(:has(~ .yfvb-player-btn), .yfvb-player-btn ~ *) {
+  padding-right: 32px;
+}
+
+.yfvb-btn.yfvb-player-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 13;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Modern grid: the views line ends the text block, 1.3em tall at 1.3x the
+   block's font size. The button takes that font size, so
+   calc(0.65em - 18px) centres it on the views line at any player size,
+   inset from the tile's edge (the hover box spills 8px past the text) so its
+   hover circle stays well inside. The views line makes room for it. */
+.ytp-modern-videowall-still-view-count-and-date-info + .yfvb-btn.yfvb-player-btn {
+  font-size: 1.3em;
+  top: auto;
+  bottom: calc(0.65em - 18px);
+  right: 8px;
+}
+
+.ytp-modern-videowall-still-view-count-and-date-info:has(+ .yfvb-player-btn) {
+  padding-right: 48px;
+}
+
+/* Autoplay's Up next card: only the picture is hidden; YouTube's layout
+   is left as it is, so the title shows exactly as without the extension.
+   The picture's space stays, empty (visibility, not display).
+   The button follows the channel line (content.js), keeps that
+   static vertical position and is pulled up to centre on the line
+   (21px line height), at the text block's right edge. */
+.ytp-autonav-endscreen-link-container:not([data-yfvb-revealed]) .ytp-autonav-endscreen-upnext-thumbnail {
+  visibility: hidden !important;
+}
+
+.ytp-autonav-endscreen-video-info:has(> .yfvb-player-btn) {
+  position: relative;
+}
+
+.ytp-autonav-endscreen-video-info > .yfvb-btn.yfvb-player-btn {
+  top: auto;
+  right: 0;
+  margin-top: -28.5px;
+}
+
+/* End-screen cards: just left of the duration label, centred on it. */
+.ytp-ce-video-duration > .yfvb-btn.yfvb-player-btn {
+  top: 50%;
+  right: calc(100% + 2px);
+  margin-top: -18px;
+}
+
+.yfvb-btn.yfvb-player-btn:hover {
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Set by besideFloatingMenu where the ⋮ floats in a plain block (Shorts). */
+[data-yfvb-reveal-abs] > .yfvb-btn {
+  position: absolute;
+}
+
+/* Set by besideFloatingMenu on home, Subscriptions, You and channel page grid cards: the reveal
+   button floats centred under the top-right ⋮, so the title keeps its full width. */
+/* There the reveal button shrinks to 28px (bar 2px tall, UNDER_MENU_GLYPH in
+   content.js), to fit the ⋮'s column. */
+.yfvb-btn[data-yfvb-under-menu] {
+  position: absolute;
+  margin: 0;
+  width: 28px;
+  height: 28px;
+}
+.yfvb-btn[data-yfvb-under-menu] svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* The metadata line runs to the card's right edge, under the ⋮'s column, so
+   it would run under the reveal button; keep it 24px clear, as YouTube keeps
+   the title clear of the ⋮. */
+yt-lockup-metadata-view-model:has(> .yfvb-btn[data-yfvb-under-menu]) yt-content-metadata-view-model,
+:has(> .yfvb-btn[data-yfvb-under-menu]) #metadata-line {
+  padding-right: 24px;
+}
+
+/* That block is overflow: hidden, which cut off the bottom of the reveal button's hover
+   circle. content.js grows the block so the reveal button pokes out at most 8px; keep it
+   clipped, with room for the circle. */
+[data-yfvb-reveal-abs] {
+  overflow: clip !important;
+  overflow-clip-margin: 12px;
+}
+
+/* Sizes are in px: YouTube sets the root font size to 10px. Colours use
+   YouTube's current theme variables (light and dark), then the older names. */
+.yfvb-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: var(--yt-sys-color-baseline--text-primary, var(--yt-spec-text-primary, #0f0f0f));
+  width: 36px;
+  height: 36px;
+  min-width: 0;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  transition: color 0.2s ease, background-color 0.2s ease, opacity 0.2s;
+  /* Cards lay touch-feedback and link overlays over themselves, and a lockup's
+     hover ⋮ sits on a z-index 1 disc that reaches 6px past it; stay on top. */
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
+}
+
+/* The reveal button is grey, hidden or revealed. :where() keeps this below the
+   hover colour. */
+:where(html) .yfvb-btn {
+  color: var(--yt-sys-color-baseline--text-secondary, var(--yt-spec-text-secondary, #606060));
+}
+
+/* Where YouTube shows a lockup's ⋮ only while the card is hovered or focused
+   (watch-page grid and sidebar), the reveal button does the same. YouTube adds the
+   hover-only class, then a "Visible" class while the card is hovered. */
+yt-lockup-metadata-view-model:has(> [class*="ShowMenuButtonOnHover"]:not([class*="Visible"]):not(:focus-within)) > .yfvb-btn:not(:focus-visible) {
+  opacity: 0;
+}
+
+/* Watch-page playlist rows show their ⋮ only while hovered; the reveal
+   button does the same. A mouse click leaves focus on the button, so only
+   keyboard focus (:focus-visible) keeps it shown off hover. */
+ytd-playlist-panel-video-renderer:not(:hover) > .yfvb-btn:not(:focus-visible) {
+  opacity: 0;
+}
+
+.yfvb-btn:hover {
+  color: var(--yt-sys-color-baseline--text-primary, var(--yt-spec-text-primary, #0f0f0f));
+  background-color: var(--yt-sys-color-baseline--tonal-background, var(--yt-spec-10-percent-layer, rgba(0, 0, 0, 0.1)));
+}
+
+.yfvb-btn:focus-visible {
+  outline: 2px solid var(--yt-sys-color-baseline--call-to-action, var(--yt-spec-call-to-action, #065fd4));
+  outline-offset: 1px;
+}
+
+
+.yfvb-btn svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.yfvb-btn:active svg {
+  transform: scale(0.9);
+}
+
+/* Lockup metadata is a row of avatar, text and ⋮; the text doesn't stretch,
+   so push the reveal button (and the ⋮ after it) to the right edge. */
+yt-lockup-metadata-view-model > .yfvb-btn {
+  margin-left: auto;
+}
+
+/* Search results: the title row is justify-content: space-between and its
+   title doesn't grow, so push the reveal button to the ⋮ (else it floats midway). The ⋮
+   takes only 24px of the row; do the same, so the reveal button doesn't push the details
+   below a one-line title further down. */
+#title-wrapper > .yfvb-btn {
+  margin-left: auto;
+  margin-block: -6px;
+}
+
+/* The playlist panel's ⋮s are smaller than the feed's; a 24px bar is too wide
+   beside them. */
+:is(ytd-playlist-panel-video-renderer > .yfvb-btn, .yfvb-btn.yfvb-playlist-all-btn) svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* The header ⋮ reaches 8px left of its box; keep clear of it, centred on it. */
+.yfvb-btn.yfvb-playlist-all-btn {
+  margin-right: 8px;
+  align-self: center;
+}
+
+/* With no header ⋮ (a Mix) it sits beside the X, which doesn't spill. Gone
+   while the panel is collapsed. */
+.yfvb-btn.yfvb-playlist-all-btn.yfvb-beside-close {
+  margin-right: 0;
+}
+
+ytd-playlist-panel-renderer[collapsed] .yfvb-btn.yfvb-playlist-all-btn {
+  display: none;
+}
+
+/* The playlist panel's ⋮s (rows and header) have no hover circle, only
+   the press effect below; their reveal buttons follow them (the user's call). */
+:is(ytd-playlist-panel-video-renderer > .yfvb-btn, .yfvb-btn.yfvb-playlist-all-btn):hover {
+  background-color: transparent;
+}
+
+/* Hover shows the reveal button's usual circle. Pressing works like the search ⋮'s
+   (yt-interaction): a 40px, 10% fill the moment it's pressed; on release the fill
+   fades out while a thin ring appears at 20% and fades out a little more slowly.
+   The ring holds its 20% during the press with a transparent border, so it shows
+   only on release. */
+
+:is(#title-wrapper, ytd-playlist-panel-video-renderer, #end-actions, #header-top-row) > .yfvb-btn::before,
+:is(#title-wrapper, ytd-playlist-panel-video-renderer, #end-actions, #header-top-row) > .yfvb-btn::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+:is(#title-wrapper, ytd-playlist-panel-video-renderer, #end-actions, #header-top-row) > .yfvb-btn::before {
+  background-color: var(--yt-sys-color-baseline--text-primary, var(--yt-spec-text-primary, #0f0f0f));
+  transition: opacity 0.35s cubic-bezier(0.2, 0.6, 0.3, 1);
+}
+
+:is(#title-wrapper, ytd-playlist-panel-video-renderer, #end-actions, #header-top-row) > .yfvb-btn::after {
+  border: 1px solid var(--yt-sys-color-baseline--text-primary, var(--yt-spec-text-primary, #0f0f0f));
+  transition: opacity 0.4s ease-in-out;
+}
+
+:is(#title-wrapper, ytd-playlist-panel-video-renderer, #end-actions, #header-top-row) > .yfvb-btn:active::before {
+  opacity: 0.1;
+  transition: none;
+}
+
+:is(#title-wrapper, ytd-playlist-panel-video-renderer, #end-actions, #header-top-row) > .yfvb-btn:active::after {
+  opacity: 0.2;
+  border-color: transparent;
+  transition: none;
+}

@@ -1,0 +1,17 @@
+{
+  "extName": {
+    "message": "Thumbnails ausblenden für YouTube"
+  },
+  "extDescription": {
+    "message": "Blendet Thumbnails aus. Mit Button zum Einblenden."
+  },
+  "showHiddenMedia": {
+    "message": "Ausgeblendete Medien anzeigen"
+  },
+  "showMedia": {
+    "message": "Medien anzeigen"
+  },
+  "hideMedia": {
+    "message": "Medien ausblenden"
+  }
+}

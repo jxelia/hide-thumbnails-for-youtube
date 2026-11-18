@@ -1,0 +1,10 @@
+Parcourez les vidéos YouTube grâce au titre et aux autres textes. Affichez la miniature si vous le souhaitez.
+
+Toutes les miniatures sont masquées pour un flux plus calme et sans distraction, avec un bouton d'affichage sur chaque vidéo quand vous voulez la voir.
+
+• Masque sur l'accueil, les abonnements, la recherche, les pages de chaînes, les playlists et les recommandations
+• Affichez la miniature avec le bouton d'affichage (placé avec la vidéo, généralement à côté du menu ⋮) ; cliquez à nouveau pour la masquer
+
+Bloquez les miniatures YouTube, désactivez les miniatures YouTube et cliquez pour les afficher. Utile pour naviguer sans distraction, moins procrastiner pendant les études ou le travail, et retirer les distractions ou les images inappropriées quand d'autres personnes regardent YouTube sur votre appareil. Permet aussi d'éviter les spoilers.
+
+Code source : https://github.com/jxelia/hide-thumbnails-for-youtube

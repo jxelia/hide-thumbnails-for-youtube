@@ -1,0 +1,10 @@
+Jelajahi video YouTube lewat judul dan teks lainnya. Tampilkan thumbnail jika mau.
+
+Semua thumbnail disembunyikan agar feed lebih tenang dan bebas gangguan, dengan tombol tampilkan di setiap video saat Anda ingin melihatnya.
+
+• Menyembunyikan di Beranda, Subscription, penelusuran, halaman channel, playlist, dan rekomendasi
+• Tampilkan thumbnail dengan tombol tampilkan (ada di dekat video, biasanya di samping menu ⋮); klik lagi untuk menyembunyikannya
+
+Blokir thumbnail YouTube, nonaktifkan thumbnail YouTube, dan klik untuk menampilkannya. Berguna untuk menjelajah tanpa gangguan, mengurangi menunda-nunda saat belajar atau bekerja, serta menghilangkan gangguan atau gambar yang tidak pantas saat orang lain membuka YouTube di perangkat Anda. Juga bisa membantu menghindari spoiler.
+
+Kode sumber di https://github.com/jxelia/hide-thumbnails-for-youtube

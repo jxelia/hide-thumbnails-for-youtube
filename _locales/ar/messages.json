@@ -1,0 +1,17 @@
+{
+  "extName": {
+    "message": "إخفاء الصور المصغّرة في YouTube"
+  },
+  "extDescription": {
+    "message": "يُخفي الصور المصغّرة. يتضمن زر إظهار."
+  },
+  "showHiddenMedia": {
+    "message": "إظهار الوسائط المخفية"
+  },
+  "showMedia": {
+    "message": "إظهار الوسائط"
+  },
+  "hideMedia": {
+    "message": "إخفاء الوسائط"
+  }
+}

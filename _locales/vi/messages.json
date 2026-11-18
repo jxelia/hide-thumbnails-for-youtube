@@ -1,0 +1,17 @@
+{
+  "extName": {
+    "message": "Ẩn hình thu nhỏ cho YouTube"
+  },
+  "extDescription": {
+    "message": "Ẩn hình thu nhỏ. Có nút để hiện lại."
+  },
+  "showHiddenMedia": {
+    "message": "Hiện nội dung đã ẩn"
+  },
+  "showMedia": {
+    "message": "Hiện nội dung"
+  },
+  "hideMedia": {
+    "message": "Ẩn nội dung"
+  }
+}

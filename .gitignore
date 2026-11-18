@@ -1,0 +1,14 @@
+# Changes on every edit (dev auto-reload stamp)
+build.txt
+# Store and release zips
+dist/
+# Developer-only add-ons, loaded in unpacked builds
+dev/
+# Local tooling
+.claude/
+.DS_Store
+# Local project notes
+CLAUDE.md
+NOTES.md
+research_notes/
+reports/

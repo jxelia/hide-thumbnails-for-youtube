@@ -1,0 +1,17 @@
+{
+  "extName": {
+    "message": "YouTube-এর থাম্বনেইল লুকান"
+  },
+  "extDescription": {
+    "message": "থাম্বনেইল লুকায়। দেখানোর বোতাম সহ।"
+  },
+  "showHiddenMedia": {
+    "message": "লুকানো মিডিয়া দেখান"
+  },
+  "showMedia": {
+    "message": "মিডিয়া দেখান"
+  },
+  "hideMedia": {
+    "message": "মিডিয়া লুকান"
+  }
+}

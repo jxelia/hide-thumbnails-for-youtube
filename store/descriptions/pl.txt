@@ -1,0 +1,10 @@
+Przeglądaj filmy na YouTube po tytułach i innym tekście. W razie potrzeby pokaż miniaturę.
+
+Wszystkie miniatury są ukryte, więc feed jest spokojniejszy i nie rozprasza. Na każdym filmie jest przycisk pokazania, gdy chcesz zobaczyć miniaturę.
+
+• Ukrywa na stronie głównej, w subskrypcjach, wyszukiwaniu, na stronach kanałów, w playlistach i rekomendacjach
+• Pokaż miniaturę przyciskiem pokazania (przy filmie, zwykle obok menu ⋮); kliknij ponownie, aby ją ukryć
+
+Blokuj miniatury YouTube, wyłącz miniatury YouTube i pokazuj je kliknięciem. Przydaje się do przeglądania bez rozpraszaczy, rzadszego odkładania spraw na później podczas nauki lub pracy oraz usuwania rozpraszających lub nieodpowiednich obrazów, gdy inni oglądają YouTube na twoim urządzeniu. Pomaga też uniknąć spoilerów.
+
+Kod źródłowy: https://github.com/jxelia/hide-thumbnails-for-youtube

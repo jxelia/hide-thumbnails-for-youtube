@@ -1,0 +1,17 @@
+{
+  "extName": {
+    "message": "Sembunyikan Thumbnail untuk YouTube"
+  },
+  "extDescription": {
+    "message": "Sembunyikan thumbnail. Dilengkapi tombol untuk menampilkannya."
+  },
+  "showHiddenMedia": {
+    "message": "Tampilkan media tersembunyi"
+  },
+  "showMedia": {
+    "message": "Tampilkan media"
+  },
+  "hideMedia": {
+    "message": "Sembunyikan media"
+  }
+}

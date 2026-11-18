@@ -1,0 +1,17 @@
+{
+  "extName": {
+    "message": "YouTube için Küçük Resimleri Gizle"
+  },
+  "extDescription": {
+    "message": "Küçük resimleri gizler. Göstermek için düğme içerir."
+  },
+  "showHiddenMedia": {
+    "message": "Gizli medyayı göster"
+  },
+  "showMedia": {
+    "message": "Medyayı göster"
+  },
+  "hideMedia": {
+    "message": "Medyayı gizle"
+  }
+}

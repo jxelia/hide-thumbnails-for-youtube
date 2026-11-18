@@ -1,0 +1,10 @@
+Use title and other text to browse YouTube videos. Optionally, show thumbnail.
+
+All thumbnails are hidden for a calmer, distraction-free feed, with a show button on each video when you want to see.
+
+• Hides on home, subscriptions, search, channel pages, playlists and recommendations
+• Show thumbnail with the unhide button (placed with the video's grid, typically next to ⋮ menu); click again to hide it
+
+Block YouTube thumbnails, disable YouTube thumbnails, and click to show. Used for distraction-free browsing, reducing procrastination when studying or working, removing distractions or inappropriate images for others seeing YouTube on your device. Also can avoid spoilers with it.
+
+Source code at https://github.com/jxelia/hide-thumbnails-for-youtube

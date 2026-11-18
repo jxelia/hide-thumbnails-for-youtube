@@ -1,0 +1,17 @@
+{
+  "extName": {
+    "message": "YouTube 썸네일 숨기기"
+  },
+  "extDescription": {
+    "message": "썸네일을 숨깁니다. 다시 보기 버튼이 있습니다."
+  },
+  "showHiddenMedia": {
+    "message": "숨긴 미디어 보기"
+  },
+  "showMedia": {
+    "message": "미디어 보기"
+  },
+  "hideMedia": {
+    "message": "미디어 숨기기"
+  }
+}

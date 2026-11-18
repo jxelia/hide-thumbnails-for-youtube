@@ -1,0 +1,17 @@
+{
+  "extName": {
+    "message": "YouTube के लिए थंबनेल छिपाएं"
+  },
+  "extDescription": {
+    "message": "थंबनेल छिपाएं। दिखाने का बटन भी शामिल है।"
+  },
+  "showHiddenMedia": {
+    "message": "छिपा मीडिया दिखाएं"
+  },
+  "showMedia": {
+    "message": "मीडिया दिखाएं"
+  },
+  "hideMedia": {
+    "message": "मीडिया छिपाएं"
+  }
+}

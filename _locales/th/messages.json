@@ -1,0 +1,17 @@
+{
+  "extName": {
+    "message": "ซ่อนภาพขนาดย่อสำหรับ YouTube"
+  },
+  "extDescription": {
+    "message": "ซ่อนภาพขนาดย่อ มีปุ่มแสดงให้"
+  },
+  "showHiddenMedia": {
+    "message": "แสดงสื่อที่ซ่อนอยู่"
+  },
+  "showMedia": {
+    "message": "แสดงสื่อ"
+  },
+  "hideMedia": {
+    "message": "ซ่อนสื่อ"
+  }
+}
